@@ -34,7 +34,7 @@ var desktopsArray = desktopsForActivity(currentActivity());
 
 for (var j = 0; j < desktopsArray.length; j++) {
     desktopsArray[j].wallpaperPlugin = 'org.kde.image'
-    desktopsArray[j].currentConfigGroup = new Array ("Wallpaper", "General")
+    desktopsArray[j].currentConfigGroup = new Array ("Wallpaper", "org.kde.image", "General")
     desktopsArray[j].writeConfig("Image", "file:///usr/share/wallpapers/core-16.09/netrunner-core.png")
 
     desktopsArray[j].currentConfigGroup = new Array("General");
