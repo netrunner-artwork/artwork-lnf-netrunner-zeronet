@@ -25,7 +25,7 @@ if (freeEdges["bottom"] == true) {
     panel.location = "top";
 }
 
-panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 27
+panel.height = screenGeometry(panel.screen).height > 1024 ? 38 : 27
 
 var simplemenu = panel.addWidget("org.kde.plasma.simplemenu")
 simplemenu.currentConfigGroup = ["General"]
@@ -50,10 +50,13 @@ yakuakeIcon.writeConfig("iconName", "yakuake")
 yakuakeIcon.writeConfig("url", "/usr/share/applications/org.kde.yakuake.desktop")
 
 var systray = panel.addWidget("org.kde.plasma.systemtray")
-systray.currentConfigGroup = ["General"]
-systray.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.discovernotifier,org.kde.plasma.diskquota")
-systray.writeConfig("knownItems", "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.notifications")
+var systrayContainmentId = systray.readConfig("SystrayContainmentId")
+var systrayContainment = desktopById(systrayContainmentId)
+systrayContainment.currentConfigGroup = ["General"]
+systrayContainment.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.discovernotifier,org.kde.plasma.diskquota")
+systrayContainment.writeConfig("knownItems", "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.kdeconnect")
 
 
 panel.addWidget("org.kde.plasma.digitalclock")
 panel.addWidget("org.kde.plasma.notifications")
+
