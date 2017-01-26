@@ -54,8 +54,8 @@ var systray = panel.addWidget("org.kde.plasma.systemtray")
 var systrayContainmentId = systray.readConfig("SystrayContainmentId")
 var systrayContainment = desktopById(systrayContainmentId)
 systrayContainment.currentConfigGroup = ["General"]
-systrayContainment.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.printmanager")
-systrayContainment.writeConfig("knownItems", "org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.notifications,org.kde.kdeconnect")
+systrayContainment.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.printmanager")
+systrayContainment.writeConfig("knownItems", "org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.notifications,org.kde.kdeconnect,org.kde.plasma.volume")
 systrayContainment.writeConfig("hiddenItems","org.kde.plasma.clipboard")
 
 panel.addWidget("org.kde.plasma.digitalclock")
