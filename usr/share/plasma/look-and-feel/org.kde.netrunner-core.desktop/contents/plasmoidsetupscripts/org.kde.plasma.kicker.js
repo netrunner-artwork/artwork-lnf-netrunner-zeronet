@@ -7,5 +7,5 @@ applet.writeConfig("favoriteApps", ["org.kde.ksysguard.desktop", "systemsettings
 applet.writeConfig("limitDepth", true)
 applet.writeConfig("useCustomButtonImage", true)
 applet.writeConfig("hiddenApplications", "org.kde.ksshaskpass.desktop")
-
+applet.writeConfig("alphaSort", true)
 applet.reloadConfig();
