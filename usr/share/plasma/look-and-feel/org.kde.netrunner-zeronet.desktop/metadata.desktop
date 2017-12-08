@@ -1,6 +1,6 @@
 [Desktop Entry]
-Comment=Netrunner Core Desktop Design
-Comment[x-test]=xxNetrunner Core Desktop Designxx
+Comment=Netrunner Zeronet Desktop Design
+Comment[x-test]=xxNetrunner Zeronet Desktop Designxx
 
 Encoding=UTF-8
 
@@ -8,16 +8,16 @@ Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown
 Keywords[x-test]=xxDesktopxx;xxWorkspacexx;xxAppearancexx;xxLook and Feelxx;xxLogoutxx;xxLockxx;xxSuspendxx;xxShutdownxx;xxHibernatexx;
 
 Name=Netrunner Core
-Name[x-test]=xxNetrunner Corexx
+Name[x-test]=xxNetrunner Zeronetxx
 Type=Service
 
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 X-KDE-ParentApp=
-X-KDE-PluginInfo-Author=Rohan Garg
+X-KDE-PluginInfo-Author=Leszek Lesner
 X-KDE-PluginInfo-Category=
-X-KDE-PluginInfo-Email=rohan@kde.org
+X-KDE-PluginInfo-Email=leszek@zevenos.com
 X-KDE-PluginInfo-License=GPLv2+
-X-KDE-PluginInfo-Name=org.kde.netrunner-core.desktop
+X-KDE-PluginInfo-Name=org.kde.netrunner-zeronet.desktop
 X-KDE-PluginInfo-Version=2.0
 X-KDE-PluginInfo-Website=http://www.kde.org
 X-Plasma-MainScript=defaults
