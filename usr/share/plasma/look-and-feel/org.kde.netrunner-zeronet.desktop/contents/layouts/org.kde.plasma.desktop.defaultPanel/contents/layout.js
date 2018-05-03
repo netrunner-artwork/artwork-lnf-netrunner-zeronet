@@ -40,5 +40,8 @@ yakuakeIcon.writeConfig("url", "file:///usr/share/applications/org.kde.yakuake.d
 panel.addWidget('org.kde.plasma.volumewin7mixer')
 panel.addWidget("org.kde.plasma.systemtray")
 panel.addWidget("org.kde.plasma.digitalclock")
+var zerowidget = panel.addWidget("org.kde.zerocontrol")
+zerowidget.currentConfigGroup = '["Configuration"]["General"]'
+zerowidget.writeConfig("zeronetLocation", "/opt/zeronet/ZeroNet-master")
 panel.addWidget("org.kde.plasma.notifications")
 
