@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.7.2
 
 Package: artwork-lnf-netrunner-zeronet
-Architecture: all
+Architecture: any
 Replaces: netrunner-artwork (<< 1.1.49)
 Breaks: netrunner-artwork (<< 1.1.49)
 Depends: artwork-wallpapers-netrunner-core, plasma-widget-volumewin7mixer
